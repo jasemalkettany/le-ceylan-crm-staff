@@ -376,3 +376,23 @@ body[data-role=dataentry] [data-act^=publish],body[data-role=dataentry] [data-ac
 @media (max-width:560px){.rh-form{grid-template-columns:1fr 1fr}.rh-form label:first-child{grid-column:1/-1}.rh-hotel{grid-template-columns:1fr}.rh-ph{min-height:180px}.rh-offer{flex-direction:column;align-items:stretch}.rh-price{align-items:flex-start}.rh-price .btn{width:100%}}
 .rh-rooms th.num{text-align:right}.rh-fbtn{display:none}
 @media (max-width:860px){.rh-fbtn{display:flex}.rh-filt{display:none}.rh-filt.show{display:block}}
+/* front page: feature tiles and agent benefits */
+.s-bento{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:200px;gap:14px;margin-top:22px}
+.bt{border-radius:18px;padding:20px;display:flex;flex-direction:column;gap:6px;overflow:hidden;position:relative}
+.bt b{font-size:18px;line-height:1.25}.bt p{margin:0;font-size:14px;opacity:.85}
+.b-big{grid-column:span 2;grid-row:span 2}.b-big b{font-size:26px}
+.b-deep{background:linear-gradient(150deg,#3C79A9,#2C5C82);color:#fff}
+.b-light{background:#E9F1F8;color:#1D2B38}.b-light b{color:#2C5C82}
+.b-white{background:#fff;border:1px solid var(--line);color:#1D2B38}.b-white b{color:#2C5C82}
+.b-photo{background-size:cover;background-position:center;color:#fff;justify-content:flex-end}
+.b-photo::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(29,43,56,0) 30%,rgba(29,43,56,.8))}
+.b-photo>*{position:relative}
+.bt-mock{margin-top:auto;background:#fff;color:#1D2B38;border-radius:14px;padding:16px;display:flex;justify-content:space-between;align-items:flex-end;gap:10px;box-shadow:0 14px 30px rgba(0,0,0,.2)}
+.bt-mock span{color:#E0A100;font-size:13px;display:block}.bt-mock b{font-size:16px;color:#2C5C82;display:block}.bt-mock em{font-style:normal;color:var(--ok);font-size:13px}
+.bt-mock strong{font-size:24px}
+.bt-cur{margin-top:auto;font-weight:600;color:#3C79A9;font-size:15px}
+.s-feat{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,2fr);gap:30px;align-items:start}
+.s-feat-g{display:grid;grid-template-columns:1fr 1fr;gap:26px 30px}.s-feat-g b{font-size:17px;color:#2C5C82}.s-feat-g hr{border:0;border-top:2px solid #3C79A9;width:40px;margin:10px 0}.s-feat-g p{margin:0;color:var(--mute)}
+@media (max-width:980px){.s-bento{grid-template-columns:1fr 1fr}.s-feat{grid-template-columns:1fr}}
+@media (max-width:560px){.s-bento{grid-template-columns:1fr;grid-auto-rows:minmax(170px,auto)}.b-big{grid-column:auto;grid-row:auto}.s-feat-g{grid-template-columns:1fr}}
+.b-wide{grid-column:span 2}@media (max-width:560px){.b-wide{grid-column:auto}}
