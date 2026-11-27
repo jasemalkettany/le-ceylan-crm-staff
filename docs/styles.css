@@ -374,3 +374,5 @@ body[data-role=dataentry] [data-act^=publish],body[data-role=dataentry] [data-ac
   .rh-rooms td{display:flex;justify-content:space-between;gap:12px;border:0;padding:6px 10px;text-align:right}.rh-rooms td::before{content:attr(data-l);color:var(--mute);text-align:left}
   .rh-rooms td:last-child .btn{width:100%}}
 @media (max-width:560px){.rh-form{grid-template-columns:1fr 1fr}.rh-form label:first-child{grid-column:1/-1}.rh-hotel{grid-template-columns:1fr}.rh-ph{min-height:180px}.rh-offer{flex-direction:column;align-items:stretch}.rh-price{align-items:flex-start}.rh-price .btn{width:100%}}
+.rh-rooms th.num{text-align:right}.rh-fbtn{display:none}
+@media (max-width:860px){.rh-fbtn{display:flex}.rh-filt{display:none}.rh-filt.show{display:block}}
